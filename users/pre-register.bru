@@ -1,0 +1,17 @@
+meta {
+  name: pre-register
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{host}}/api/users/pre-register
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "email": "user@gmail.com"
+  }
+}
